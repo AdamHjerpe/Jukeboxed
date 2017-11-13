@@ -1,0 +1,44 @@
+{
+  "name": "Jukeboxed",
+  "version": "1.0.0",
+  "description": "description",
+  "author": "Im Linus & AdamHjerpe",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --env=dev --progress --profile --colors",
+    "build:prod": "webpack --env=prod --progress --profile --colors",
+    "dev": "npm-run-all build:dev serve",
+    "prod": "npm-run-all build:prod",
+    "serve": "webpack-dev-server --env=dev --content-base dist/ --port 8811"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.2",
+    "compression-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.1.1",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^13.0.4",
+    "vue-template-compiler": "^2.4.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "vue": "^2.4.2",
+    "vue-router": "^2.7.0"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

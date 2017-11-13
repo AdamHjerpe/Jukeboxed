@@ -1,0 +1,39 @@
+// +-------------------------------------------------------------------------+
+// | Base                                                                    |
+// +-------------------------------------------------------------------------+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  @include prefix(font-smoothing, antialiased);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 100%;
+
+  @include respond(tablet) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: $main-font;
+  font-size: 1rem;
+  @include transition($transition-all);
+
+  @include respond(tablet) {
+    @include font-size(0.9rem);
+  }
+
+  &.loading { @include alpha(0); }
+  &.loaded { @include alpha(1); }
+}

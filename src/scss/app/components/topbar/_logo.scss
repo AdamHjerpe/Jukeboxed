@@ -1,0 +1,18 @@
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  a, a:visited {
+    color: white;
+    display: block;
+    text-decoration: none;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+    @include font-size(1.75rem);
+
+    &.hidden { @include ir(); }
+  }
+}

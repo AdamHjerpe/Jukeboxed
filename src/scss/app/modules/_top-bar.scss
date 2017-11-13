@@ -1,0 +1,14 @@
+.topbar {
+  z-index: 1000;
+  background: black;
+  width: 100%;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  
+  height: 5rem;
+  line-height: 5rem;
+
+  @include position(fixed, 0, null, null, 0);
+}

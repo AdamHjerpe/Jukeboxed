@@ -1,0 +1,72 @@
+// +-------------------------------------------------------------------------+
+// | Fonts                                                                   |
+// +-------------------------------------------------------------------------+
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+$main-font: 'Lato', sans-serif; // 'AkkuratPro-Regular';
+$secondary-font: 'Merriweather', serif; // 'Relay-Bold';
+
+// -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+// @include font-face(
+// 	'Relay',
+// 	font-files(
+// 	  '../public/fonts/Relay-Regular.woff',
+// 	  '../public/fonts/Relay-Regular.svg',
+//     '../public/fonts/Relay-Regular.ttf'
+// 	),
+// 	'../public/fonts/Relay-Regular.eot'
+// );
+//
+// @include font-face(
+// 	'Relay-Light',
+// 	font-files(
+// 	  '../public/fonts/Relay-Light.woff',
+// 	  '../public/fonts/Relay-Light.svg',
+//    '../public/fonts/Relay-Light.ttf'
+// 	),
+// 	'../public/fonts/Relay-Light.eot'
+// );
+//
+// @include font-face(
+// 	'Relay-Bold',
+// 	font-files(
+// 	  '../public/fonts/Relay-Bold.woff',
+// 	  '../public/fonts/Relay-Bold.svg',
+//    '../public/fonts/Relay-Bold.ttf'
+// 	),
+// 	'../public/fonts/Relay-Bold.eot'
+// );
+//
+//
+// @include font-face(
+// 	'AkkuratPro-Regular',
+// 	font-files(
+// 	  '../public/fonts/AkkuratPro-Regular.woff',
+// 	  '../public/fonts/AkkuratPro-Regular.svg',
+//    '../public/fonts/AkkuratPro-Regular.ttf'
+// 	),
+// 	'../public/fonts/AkkuratPro-Regular.eot'
+// );
+//
+// @include font-face(
+// 	'AkkuratPro-Light',
+// 	font-files(
+// 	  '../public/fonts/AkkuratPro-Light.woff',
+// 	  '../public/fonts/AkkuratPro-Light.svg',
+//    '../public/fonts/AkkuratPro-Light.ttf'
+// 	),
+// 	'../public/fonts/AkkuratPro-Light.eot'
+// );
+//
+// @include font-face(
+// 	'AkkuratPro-Bold',
+// 	font-files(
+// 	  '../public/fonts/AkkuratPro-Bold.woff',
+// 	  '../public/fonts/AkkuratPro-Bold.svg',
+//    '../public/fonts/AkkuratPro-Bold.ttf'
+// 	),
+// 	'../public/fonts/AkkuratPro-Bold.eot'
+// );

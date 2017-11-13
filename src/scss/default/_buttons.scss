@@ -1,0 +1,93 @@
+// +-------------------------------------------------------------------------+
+// | Buttons                                                                 |
+// +-------------------------------------------------------------------------+
+
+button,
+.btn,
+[type=submit] {
+  margin: 0;
+  color: #f5f5f5;
+  background: $secondary-color;
+  border: 1px solid darken($secondary-color, 5%);
+  transition: $transition-all;
+  font-family: $main-font;
+  font-weight: 400;
+  @extend %inline-block;
+  @extend %user-select-none;
+  @include rem(border-radius, 2rem);
+  @include padding(0.5rem 0.5rem);
+  @include font-size(0.85rem);
+
+  &:hover {
+    color: #f5f5f5;
+    background: lighten($secondary-color, 15%);
+    border: 1px solid darken($secondary-color, 15%);
+    cursor: pointer;
+  }
+
+  &.invert,
+  .dark & {
+    background: $main-color;
+    border: 1px solid darken($main-color, 5%);
+
+    &:hover {
+      color: #f5f5f5;
+      background: lighten($main-color, 5%);
+      border: 1px solid darken($main-color, 5%);
+      cursor: pointer;
+    }
+  }
+
+  &.large {
+    @include font-size(1rem);
+    @include padding(0.75rem 1.5rem);
+  }
+
+  &:focus { outline: 0; }
+
+  &:disabled, [disabled] {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+
+  &.fullwidth {
+    width: 100%;
+    display: block;
+  }
+
+  &.outline {
+    color: $main-color;
+    background: none;
+    border: 1px solid darken($main-color, 5%);
+
+    &:hover {
+      background: none;
+      border: 1px solid $secondary-color;
+      color: darken($secondary-color, 5%);
+    }
+  }
+
+  &.success, &.green {
+    background: $green-2;
+    border: 1px solid darken($green-2, 15%);
+    &:hover { background: $green-3; }
+  }
+
+  &.alert, &.red {
+    background: $red-1;
+    border: 1px solid darken($red-1, 15%);
+    &:hover { background: $red-2; }
+  }
+
+  &.warning, &.orange {
+    background: $orange-1;
+    border: 1px solid darken($orange-1, 15%);
+    &:hover { background: lighten($orange-1, 10%); }
+  }
+
+  &.purple {
+    background: $purple-1;
+    border: 1px solid darken($purple-1, 15%);
+    &:hover { background: $purple-2; }
+  }
+}

@@ -1,0 +1,14 @@
+@include keyframes(bounce) {
+  0% { @include prefix(transform, scale(1)); }
+  25% { @include prefix(transform, scale(0.5)); }
+  50% { @include prefix(transform, scale(1.5)); }
+  100% { @include prefix(transform, scale(1)); }
+}
+
+@include keyframes(bell) {
+  0%, 25%, 75%, 100% { @include prefix(transform, rotate(0deg)); }
+  40% { @include prefix(transform, rotate(10deg)); }
+  45% { @include prefix(transform, rotate(-20deg)); }
+  55% { @include prefix(transform, rotate(10deg)); }
+  60% { @include prefix(transform, rotate(-10deg)); }
+}
