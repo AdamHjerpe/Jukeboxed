@@ -1,6 +1,7 @@
 .logo {
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding: 0 1rem;
 
   a, a:visited {
     color: white;
@@ -9,6 +10,7 @@
   }
 
   h1 {
+    line-height: 5rem;
     color: white;
     margin: 0;
     @include font-size(1.75rem);

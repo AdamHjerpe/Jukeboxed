@@ -1,0 +1,16 @@
+.menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0 1rem;
+
+  li {
+    padding: 0 1rem;
+
+    a, a:visited {
+      color: white;
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
