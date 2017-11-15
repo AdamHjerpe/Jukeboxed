@@ -1,2 +1,11 @@
 # Jukeboxed
-REVN-stack music player (Retinkdb, express, vue, node)
+
+They see me developin'
+they hatin'
+```
+try { 
+  patrollin()
+} catch(meRidinDirty())
+```
+
+REVN-stack (ReThinkDB, Express, Vue, Node)
