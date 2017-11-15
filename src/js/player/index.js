@@ -329,9 +329,7 @@ class soundCloudPlayer {
 
   if (this._options.scClientId) {
    this.loadScript('https://connect.soundcloud.com/sdk/sdk-3.1.2.js', () => {
-    SC.initialize({
-     client_id: this._options.scClientId
-    });
+    SC.initialize({ client_id: this._options.scClientId });
     this._scriptLoaded = true;
    });
 
@@ -381,13 +379,12 @@ class soundCloudPlayer {
   }
 
   if (this._options.scClientId) {
-   SC.resolve(url)
-    .then(track => {
+   SC.resolve(url).then(track => {
      this._player.trackData(track);
      this._scTrack = track;
      this._audioElement.setAttribute('src', `${track.stream_url}?client_id=${this._options.scClientId}`);
      this._audioElement.play();
-    });
+   });
   } else {
    if (!this._widget) {
     // create widget
@@ -614,9 +611,7 @@ class youTubePlayer {
   }
 
   if (!this._ready && !this._readyError) {
-   if (!this._initializing) {
-    this.init(videoId);
-   }
+   if (!this._initializing) this.init(videoId)
 
    return setTimeout(() => {
     this.playUrl(url);
